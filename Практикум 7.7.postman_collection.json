@@ -1,0 +1,1693 @@
+{
+	"info": {
+		"_postman_id": "36d9d622-19ec-4130-a904-cedca2b594c2",
+		"name": "Практикум 7.7",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://130.193.37.179/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "X-KL-Ajax-Request",
+						"value": "Ajax_Request",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://130.193.37.179/api/pet/?page=1&page_size=6&species__name=кот&breed__code=indian&gender__code=f&age=0",
+					"protocol": "http",
+					"host": [
+						"130",
+						"193",
+						"37",
+						"179"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "кот"
+						},
+						{
+							"key": "breed__code",
+							"value": "indian"
+						},
+						{
+							"key": "gender__code",
+							"value": "f"
+						},
+						{
+							"key": "age",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://130.193.37.179/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "X-KL-Ajax-Request",
+						"value": "Ajax_Request",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://130.193.37.179/api/pet/?page=1&page_size=6&species__name=кот&breed__code=siberian_cat&gender__code=m&age=2",
+					"protocol": "http",
+					"host": [
+						"130",
+						"193",
+						"37",
+						"179"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "кот"
+						},
+						{
+							"key": "breed__code",
+							"value": "siberian_cat"
+						},
+						{
+							"key": "gender__code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://130.193.37.179/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "X-KL-Ajax-Request",
+						"value": "Ajax_Request",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://130.193.37.179/api/pet/?page=1&page_size=6&species__name=кот&breed__code=indian&gender__code=f&age=",
+					"protocol": "http",
+					"host": [
+						"130",
+						"193",
+						"37",
+						"179"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "кот"
+						},
+						{
+							"key": "breed__code",
+							"value": "indian"
+						},
+						{
+							"key": "gender__code",
+							"value": "f"
+						},
+						{
+							"key": "age",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://130.193.37.179/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "X-KL-Ajax-Request",
+						"value": "Ajax_Request",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://130.193.37.179/api/pet/?page=1&page_size=6&species__name=кошка&breed__code=siberian_cat&gender__code=f&age=0",
+					"protocol": "http",
+					"host": [
+						"130",
+						"193",
+						"37",
+						"179"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "кошка"
+						},
+						{
+							"key": "breed__code",
+							"value": "siberian_cat"
+						},
+						{
+							"key": "gender__code",
+							"value": "f"
+						},
+						{
+							"key": "age",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://130.193.37.179/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "X-KL-Ajax-Request",
+						"value": "Ajax_Request",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://130.193.37.179/api/pet/?page=1&page_size=6&species__name=кошка&breed__code=siberian_cat&gender__code=f&age=0",
+					"protocol": "http",
+					"host": [
+						"130",
+						"193",
+						"37",
+						"179"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "кошка"
+						},
+						{
+							"key": "breed__code",
+							"value": "siberian_cat"
+						},
+						{
+							"key": "gender__code",
+							"value": "f"
+						},
+						{
+							"key": "age",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://130.193.37.179/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "X-KL-Ajax-Request",
+						"value": "Ajax_Request",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://130.193.37.179/api/pet/?page=1&page_size=6&species__name=Обезьянка&breed__code=indian&gender__code=f&age=2",
+					"protocol": "http",
+					"host": [
+						"130",
+						"193",
+						"37",
+						"179"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Обезьянка"
+						},
+						{
+							"key": "breed__code",
+							"value": "indian"
+						},
+						{
+							"key": "gender__code",
+							"value": "f"
+						},
+						{
+							"key": "age",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "7",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://130.193.37.179/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "X-KL-Ajax-Request",
+						"value": "Ajax_Request",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://130.193.37.179/api/pet/?page=1&page_size=6&species__name=Обезьянка&breed__code=indian&gender__code=m&age=0",
+					"protocol": "http",
+					"host": [
+						"130",
+						"193",
+						"37",
+						"179"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Обезьянка"
+						},
+						{
+							"key": "breed__code",
+							"value": "indian"
+						},
+						{
+							"key": "gender__code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "8",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://130.193.37.179/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "X-KL-Ajax-Request",
+						"value": "Ajax_Request",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://130.193.37.179/api/pet/?page=1&page_size=6&species__name=попугай&breed__code=indian&gender__code=wait_home&age=0",
+					"protocol": "http",
+					"host": [
+						"130",
+						"193",
+						"37",
+						"179"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "попугай"
+						},
+						{
+							"key": "breed__code",
+							"value": "indian"
+						},
+						{
+							"key": "gender__code",
+							"value": "wait_home"
+						},
+						{
+							"key": "age",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "9",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://130.193.37.179/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "X-KL-Ajax-Request",
+						"value": "Ajax_Request",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://130.193.37.179/api/pet/?page=1&page_size=6&species__name=попугай&breed__code=cockatiel&gender__code=m&age=0",
+					"protocol": "http",
+					"host": [
+						"130",
+						"193",
+						"37",
+						"179"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "попугай"
+						},
+						{
+							"key": "breed__code",
+							"value": "cockatiel"
+						},
+						{
+							"key": "gender__code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "10",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://130.193.37.179/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "X-KL-Ajax-Request",
+						"value": "Ajax_Request",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://130.193.37.179/api/pet/?page=1&page_size=6&species__name=попугай&breed__code=indian&gender__code=f&age=1",
+					"protocol": "http",
+					"host": [
+						"130",
+						"193",
+						"37",
+						"179"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "попугай"
+						},
+						{
+							"key": "breed__code",
+							"value": "indian"
+						},
+						{
+							"key": "gender__code",
+							"value": "f"
+						},
+						{
+							"key": "age",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "11",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://130.193.37.179/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "X-KL-Ajax-Request",
+						"value": "Ajax_Request",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://130.193.37.179/api/pet/?page=1&page_size=6&species__name=попугай&breed__code=cockatiel&gender__code=wait_home&age=2",
+					"protocol": "http",
+					"host": [
+						"130",
+						"193",
+						"37",
+						"179"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "попугай"
+						},
+						{
+							"key": "breed__code",
+							"value": "cockatiel"
+						},
+						{
+							"key": "gender__code",
+							"value": "wait_home"
+						},
+						{
+							"key": "age",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "12",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://130.193.37.179/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "X-KL-Ajax-Request",
+						"value": "Ajax_Request",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://130.193.37.179/api/pet/?page=1&page_size=6&species__name=слон&breed__code=indian&gender__code=wait_home&age=",
+					"protocol": "http",
+					"host": [
+						"130",
+						"193",
+						"37",
+						"179"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "слон"
+						},
+						{
+							"key": "breed__code",
+							"value": "indian"
+						},
+						{
+							"key": "gender__code",
+							"value": "wait_home"
+						},
+						{
+							"key": "age",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "13",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://130.193.37.179/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "X-KL-Ajax-Request",
+						"value": "Ajax_Request",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://130.193.37.179/api/pet/?page=1&page_size=6&species__name=слон&breed__code=indian&gender__code=m&age=1",
+					"protocol": "http",
+					"host": [
+						"130",
+						"193",
+						"37",
+						"179"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "слон"
+						},
+						{
+							"key": "breed__code",
+							"value": "indian"
+						},
+						{
+							"key": "gender__code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "14",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://130.193.37.179/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "X-KL-Ajax-Request",
+						"value": "Ajax_Request",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://130.193.37.179/api/pet/?page=1&page_size=6&gender__code=f&age=2",
+					"protocol": "http",
+					"host": [
+						"130",
+						"193",
+						"37",
+						"179"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "gender__code",
+							"value": "f"
+						},
+						{
+							"key": "age",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "15",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://130.193.37.179/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "X-KL-Ajax-Request",
+						"value": "Ajax_Request",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://130.193.37.179/api/pet/?page=1&page_size=6&breed__code=indian&gender__code=wait_home&age=",
+					"protocol": "http",
+					"host": [
+						"130",
+						"193",
+						"37",
+						"179"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "breed__code",
+							"value": "indian"
+						},
+						{
+							"key": "gender__code",
+							"value": "wait_home"
+						},
+						{
+							"key": "age",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "16",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://130.193.37.179/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "X-KL-Ajax-Request",
+						"value": "Ajax_Request",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://130.193.37.179/api/pet/?page=1&page_size=6&breed__code=cockatiel&gender__code=m&age=0",
+					"protocol": "http",
+					"host": [
+						"130",
+						"193",
+						"37",
+						"179"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "breed__code",
+							"value": "cockatiel"
+						},
+						{
+							"key": "gender__code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "17",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://130.193.37.179/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "X-KL-Ajax-Request",
+						"value": "Ajax_Request",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://130.193.37.179/api/pet/?page=1&page_size=6&breed__code=german_shepherd&gender__code=f&age=1",
+					"protocol": "http",
+					"host": [
+						"130",
+						"193",
+						"37",
+						"179"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "breed__code",
+							"value": "german_shepherd"
+						},
+						{
+							"key": "gender__code",
+							"value": "f"
+						},
+						{
+							"key": "age",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "18",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://130.193.37.179/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "X-KL-Ajax-Request",
+						"value": "Ajax_Request",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://130.193.37.179/api/pet/?page=1&page_size=6&breed__code=pitbull&gender__code=wait_home&age=2",
+					"protocol": "http",
+					"host": [
+						"130",
+						"193",
+						"37",
+						"179"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "breed__code",
+							"value": "pitbull"
+						},
+						{
+							"key": "gender__code",
+							"value": "wait_home"
+						},
+						{
+							"key": "age",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "19",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://130.193.37.179/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "X-KL-Ajax-Request",
+						"value": "Ajax_Request",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://130.193.37.179/api/pet/?page=1&page_size=6&breed__code=pitbull&gender__code=m&age=0",
+					"protocol": "http",
+					"host": [
+						"130",
+						"193",
+						"37",
+						"179"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "breed__code",
+							"value": "pitbull"
+						},
+						{
+							"key": "gender__code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "20",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://130.193.37.179/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "X-KL-Ajax-Request",
+						"value": "Ajax_Request",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://130.193.37.179/api/pet/?page=1&page_size=6&species__name=кот&gender__code=wait_home&age=0",
+					"protocol": "http",
+					"host": [
+						"130",
+						"193",
+						"37",
+						"179"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "кот"
+						},
+						{
+							"key": "gender__code",
+							"value": "wait_home"
+						},
+						{
+							"key": "age",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "21",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://130.193.37.179/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "X-KL-Ajax-Request",
+						"value": "Ajax_Request",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://130.193.37.179/api/pet/?page=1&page_size=6&species__name=кот&breed__code=indian&gender__code=m&age=1",
+					"protocol": "http",
+					"host": [
+						"130",
+						"193",
+						"37",
+						"179"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "кот"
+						},
+						{
+							"key": "breed__code",
+							"value": "indian"
+						},
+						{
+							"key": "gender__code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "22",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://130.193.37.179/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "X-KL-Ajax-Request",
+						"value": "Ajax_Request",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://130.193.37.179/api/pet/?page=1&page_size=6&species__name=кот&breed__code=siberian_cat&gender__code=f&age=",
+					"protocol": "http",
+					"host": [
+						"130",
+						"193",
+						"37",
+						"179"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "кот"
+						},
+						{
+							"key": "breed__code",
+							"value": "siberian_cat"
+						},
+						{
+							"key": "gender__code",
+							"value": "f"
+						},
+						{
+							"key": "age",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
